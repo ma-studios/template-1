@@ -90,6 +90,37 @@ a
 	font-size: 50px;
 }
 
+.bars, .x
+{
+	width: 50px;
+	display: none;
+}
+
+.vis
+{
+	display: block;
+}
+
+.invis
+{
+	display: none;
+}
+
+
+@media only screen and ( max-width: 900px )
+{
+	.bars
+	{
+		display: block;
+	}
+
+	.menu
+	{
+		flex-direction: column;
+		display: none;
+	}
+}
+
 
 /* ----------------------footer------------------------- */
 
