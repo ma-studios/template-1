@@ -65,7 +65,7 @@ a
 
 .background-1
 {
-	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/justice.jpg");
+	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/justice.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -162,7 +162,7 @@ a
 
 .background-3
 {
-	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/hammer.jpg");
+	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/hammer.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;

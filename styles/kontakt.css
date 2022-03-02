@@ -1,6 +1,6 @@
 .section-1
 {
-	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/books.jpg");
+	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/books.jpg");
 
 	background-repeat: no-repeat;
 	background-size: cover;
