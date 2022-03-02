@@ -2,18 +2,34 @@ let bars;
 let x;
 let menu;
 
-let onBarsClick = () => 
+let toggle = () =>
 {
-	bars.classList.add( "invis" );
-	x.classList.add( "vis" );
-	menu.classList.add( "vis" );
-}
+  if(bars.style.display === "block" || bars.style.display === "")
+  {
+    bars.style.display = "none";
+  }
+  else
+  {
+    bars.style.display = "block";
+  }
 
-let onXClick = () =>
-{
-	bars.classList.remove( "vis" )
-	x.classList.remove( "vis" );
-	menu.remove( "vis" );
+  if(menu.style.display === "block")
+  {
+    menu.style.display = "none";
+  }
+  else
+  {
+    menu.style.display = "block";
+  }
+
+  if(x.style.display === "block")
+  {
+    x.style.display = "none";
+  }
+  else
+  {
+    x.style.display = "block";
+  }
 }
 
 let init = () =>
@@ -22,10 +38,8 @@ let init = () =>
 	x = document.querySelector( ".x" );
 	menu = document.querySelector( ".menu" );
 
-	console.log( menu );
-
-	bars.addEventListener( "click", onBarsClick );
-	x.addEventListener( "click", onXClick );
+  bars.addEventListener("click", toggle);
+  x.addEventListener("click", toggle);
 
 	console.log( "1" );
 }

@@ -158,6 +158,19 @@ a
 	right: -20px;
 	z-index: 1;
 }
+
+@media only screen and (max-device-width: 900px)
+{
+  .image 
+  {
+    display: none;
+  }
+
+  .info
+  {
+    flex-basis: 100%;
+  }
+}
 /* ~~~~~~~~~~~~~~~~~~~~SECTION 3~~~~~~~~~~~~~~~~~~~~ */
 
 .background-3
@@ -200,11 +213,16 @@ a
 
 .card
 {
+  font-size:16;
 	flex-basis: 25%;
 	height: 400px;
-
 	display: flex;
 	flex-direction: column;
+}
+
+.card:hover
+{
+  background-color: #80808032;
 }
 
 .title-3
@@ -225,6 +243,37 @@ a
 {
 	width: 60px;
 	height: 60px;
+}
+
+@media only screen and (max-device-width: 900px)
+{
+  .card
+  {
+    font-size: 16px;
+    flex-basis: 50%;
+  }
+
+  .title-3
+  {
+    margin: 10px 0px;
+    font-size: 32px;
+    font-weight:bold;
+    flex-direction: row;
+  }
+
+  .title-3 span
+  {
+    padding-right: 7px;
+  }
+}
+
+@media only screen and (max-device-width: 600px)
+{
+  .card
+  {
+    font-size: 30px;
+    flex-basis: 100%;
+  }
 }
 
 /* ~~~~~~~~~~~~~~section 4~~~~~~~~~~~~~~~~~~~~~ */
