@@ -1,0 +1,23 @@
+.section-1
+{
+	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/books.jpg");
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.section-1
+{
+	height: 60vh;
+	color: white;
+}
+
+.content
+{
+	height: 50vh;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+}

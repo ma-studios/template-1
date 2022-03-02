@@ -1,0 +1,98 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Libre Franklin";
+	box-sizing: border-box;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}	
+
+
+.section
+{
+	height: 100vh;
+	/* border: 2px solid gold; */
+}
+
+.wrapper
+{
+	width: 80%;
+	margin: auto;
+
+	display: flex;
+}
+
+.footer
+{
+	height: 100px;
+}
+
+.background
+{
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~HEADER STYLE~~~~~~~~~~~~~~~~~ */
+.wrapper-1
+{
+	flex-direction: column;
+}
+
+.logo
+{
+	width: 30%;
+	line-height: 100px;
+	height: 100px;
+}
+
+.header
+{
+	display: flex;
+	justify-content: space-between;
+	height: 10vh;
+}
+
+.menu
+{
+	display: flex;
+	width: 30%;
+	justify-content: space-evenly;
+}
+
+.menu-item
+{
+	height: 10vh;
+	line-height: 10vh;
+}
+
+.content
+{
+	font-size: 50px;
+}
+
+
+/* ----------------------footer------------------------- */
+
+.footer{
+	display: flex;
+	height: 8vh;
+	background-color: red;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
