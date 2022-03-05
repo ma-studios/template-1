@@ -1,23 +1,142 @@
-.section-1
-{
-	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/books.jpg");
+.section-1 {
+  background: linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.7)),
+    url("../assets/images/books.jpg");
 
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.section-1
-{
-	height: 60vh;
-	color: white;
+.section-1 {
+  height: 28.7vh;
+  color: #cdb781;
+  font-size: 22px;
 }
 
-.content
-{
-	height: 50vh;
-	display: flex;
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 80px;
+  height: 81.3vh;
+}
 
-	align-items: center;
-	justify-content: center;
+.info {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.contact {
+  width: 493px;
+}
+
+.contact > span {
+  font-size: 32px;
+}
+
+.contacts {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.contacts img {
+  width: 32px;
+  margin: 0 10px;
+}
+
+.description a img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #808080;
+}
+
+.description span {
+  font-size: 20px;
+}
+
+.description p {
+  margin: 12px 0px;
+  display: block;
+}
+
+.description a img {
+  margin: 10px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 493px;
+}
+
+.form form span {
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.form form input {
+  width: 49%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form form textarea {
+  width: 100%;
+  font-size: 16px;
+}
+
+.form form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #b1976b;
+  color: white;
+  font-size: 16px;
+}
+
+@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .section-1 {
+    font-size: 32px;
+  }
+  .section-1 a {
+    padding: 20px;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+  }
+
+  .contacts {
+    flex-basis: 100%;
+  }
+
+  .form {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+  .section-1 {
+    font-size: 28px;
+  }
+
+  .section-1 a {
+    padding: 20px;
+  }
+
+  .card-holder {
+    width: 100%;
+  }
+
+  .card {
+    flex-basis: 50%;
+  }
 }

@@ -1,23 +1,101 @@
-.section-1
-{
-	background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/books.jpg");
+.section-1 {
+  background: linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.7)),
+    url("../assets/images/books.jpg");
 
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.section-1
-{
-	height: 60vh;
-	color: white;
+.section-1 {
+  height: 28.7vh;
+  color: #cdb781;
+  font-size: 22px;
 }
 
-.content
-{
-	height: 50vh;
-	display: flex;
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 80px;
+}
 
-	align-items: center;
-	justify-content: center;
+.card-wrap {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  /* height: 71.3%; */
+  padding-top: 5%;
+}
+
+.card-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  width: 60%;
+}
+
+.card {
+  flex-direction: column;
+  flex-basis: 25%;
+  padding: 20px;
+}
+
+.card img
+{
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.card span {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  
+
+  .section-1 {
+    font-size: 32px;
+  }
+  .section-1 a
+  {
+    padding: 20px;
+  }
+  
+  
+  .card-holder {
+    width: 100%;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+  .section-1 {
+    font-size: 28px;
+  }
+
+  .section-1 a
+  {
+    padding: 20px;
+  }
+  
+  
+  .card-holder {
+    width: 100%;
+  }
+
+  .card {
+    flex-basis: 50%;
+  }
 }
