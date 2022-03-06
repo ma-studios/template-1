@@ -1,15 +1,21 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Advokat-Kontakt</title>
-		<link rel="stylesheet" href="../styles/shared.css" >
-		<link rel="stylesheet" href="../styles/kontakt.css" >
-		<script src="../js/button.js"></script>
-	</head>
+  <head>
+    <title>Advokat-Kontakt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/shared.css" />
+    <link rel="stylesheet" href="../styles/kontakt.css" />
+    <script src="../js/button.js"></script>
+  </head>
 
-	<body>
-		<div class="section section-1">
-			<div class="wrapper wrapper-1" >
+  <body>
+    <div class="section section-1">
+      <div class="wrapper wrapper-1">
+
 					<div class="header">
 						<img class="logo" src="../assets/icons/logo-1.svg">
 						<div class="v-menu-container">
@@ -57,11 +63,89 @@
 							<img class="x" src="../assets/icons/xmark.svg"/>
 						</div>
 					</div>
-		<div class="content">
-			<span>Kontakt</span>
-		</div>
-		</div>
-		</div>
-	</body>
+      </div>
+    </div>
+    <div class="info">
+      <div class="contact">
+        <span>Kontaktirajte Nas</span>
+        <div class="contacts">
+          <div class="img">
+            <img src="../assets/icons/address-book.svg" alt="" />
+          </div>
+          <div class="description">
+            <span>Kontakt informacije </span>
+            <p>Address : Jovana Cvijića bb, 15300 Loznica</p>
+            <p>Number : 060 / 393-8000</p>
+            <p>Email : adv.vesnaplavsic@gmail.com</p>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="img">
+            <img src="../assets/icons/clock.svg" alt="" />
+          </div>
+          <div class="description">
+            <span>Radno Vreme </span>
+            <p>Pon - Pet: 8:00 – 15:00</p>
+            <p>Subota: Neradno</p>
+            <p>Nedelja: Neradno</p>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="img">
+            <img src="../assets/icons/family.svg" alt="" />
+          </div>
+          <div class="description">
+            <span>Zapratite Nas </span> <br />
+            <a href="#"><img src="../assets/icons/facebook.svg" alt="" /></a>
+            <a href="#"><img src="../assets/icons/twitter.svg" alt="" /></a>
+            <a href="#"><img src="../assets/icons/instagram.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <form action="">
+          <span>Budite slobodni da nam pošaljete pitanje </span><br />
+          <input type="text" name="name" id="name" value="Ime i Prezime" />
+          <input type="tel" name="phone" id="phone" value="Telefon" /><br />
+          <input type="email" name="email" id="email" value="Email" />
+          <input type="text" name="title" id="title" value="Naslov" /><br />
+          <textarea name="Text1" cols="40" rows="5">Poruka</textarea>
+          <button>Pošaljite</button>
+        </form>
+      </div>
+    </div>
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          width="100%"
+          height="100%"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=loznica&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe
+        ><a href="https://fmovies-online.net"></a><br /><style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 500px;
+            width: 100vw;
+          }</style
+        ><a href="https://www.embedgooglemap.net"></a
+        ><style>
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 500px;
+            width: 100vw;
+          }
+        </style>
+      </div>
+      <div class="footer">
+        <span> Copyright 2022 </span>
+      </div>
+    </div>
+  </body>
 </html>
-
