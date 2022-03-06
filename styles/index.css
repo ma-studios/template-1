@@ -57,10 +57,11 @@ a
 
 .content
 {
+	padding: 35vh 0;
+	font-size: 5vh;
+	color: #b1976bff;
 	height: 80vh;
-	line-height: 80vh;
 	text-align: center;
-	font-size: 3rem;
 }
 
 .background-1
@@ -76,6 +77,12 @@ a
 	color: white;
 }
 
+.contact-segment
+{
+	display: flex;
+	height: 10vh;
+}
+
 .contact-info
 {
 	height: 10vh;
@@ -83,8 +90,33 @@ a
 	display: flex;
 	justify-content: space-between;
 
-	line-height: 100px;
-	border-top: 1px solid #808080;
+	border-top: 1px solid #b1976bff;
+	color: #b1976bff;
+}
+.contact-icon
+{
+	height: 3vh;
+	margin-right: 1vw;
+	margin-top: 3.5vh;
+}
+
+@media only screen and ( max-width: 900px )
+{
+	.contact-info
+	{
+		height: 20vh;
+		flex-direction: column;
+	}
+
+	.content
+	{
+		height: 70vh;
+	}
+
+	.contact-segment
+	{
+		justify-content: center;
+	}
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~SECTION 2~~~~~~~~~~~~~~~~~~~~ */

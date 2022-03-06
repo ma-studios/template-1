@@ -2,32 +2,42 @@ let bars;
 let x;
 let menu;
 
-let onBarsClick = () => 
+let toggleDisplay = node =>
 {
-	bars.classList.add( "invis" );
-	x.classList.add( "vis" );
-	menu.classList.add( "vis" );
+	if( node.style.display === "none" )
+	{
+		node.style.display = "block";
+	}
+	else
+	{
+		node.style.display = "none";
+	}
 }
 
-let onXClick = () =>
+let toggleMenu = () => 
 {
-	bars.classList.remove( "vis" )
-	x.classList.remove( "vis" );
-	menu.remove( "vis" );
+	toggleDisplay( bars );
+	toggleDisplay( x );
+	toggleDisplay( menu );
 }
 
 let init = () =>
 {
 	bars = document.querySelector( ".bars" );
 	x = document.querySelector( ".x" );
-	menu = document.querySelector( ".menu" );
+	menu = document.querySelector( ".v-menu" );
 
-	console.log( menu );
+	//css klsa daje display none
+	//css klase dodelim display block
+	//
+	//element.style.display -> ""
 
-	bars.addEventListener( "click", onBarsClick );
-	x.addEventListener( "click", onXClick );
+	menu.style.display = "none";
+	bars.style.display = "block";
+	x.style.display = "none";
 
-	console.log( "1" );
+	bars.addEventListener( "click", toggleMenu );
+	x.addEventListener( "click", toggleMenu );
 }
 
 document.addEventListener( "DOMContentLoaded", init );

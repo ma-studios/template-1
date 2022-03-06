@@ -58,25 +58,28 @@ a
 	flex-direction: column;
 }
 
-.logo
-{
-	width: 30%;
-	line-height: 100px;
-	height: 100px;
-}
-
 .header
 {
 	display: flex;
 	justify-content: space-between;
 	height: 10vh;
+	/* position: relative; */
 }
 
+
+.logo
+{
+	margin-top: 1vh;
+	height: 8vh;
+}
+
+/* -item- -item- -item- */
 .menu
 {
 	display: flex;
 	width: 30%;
 	justify-content: space-evenly;
+	color: #b1976bff;
 }
 
 .menu-item
@@ -85,46 +88,72 @@ a
 	line-height: 10vh;
 }
 
-.content
-{
-	font-size: 50px;
-}
 
 .bars, .x
 {
-	width: 50px;
-	display: none;
+	width: 5vh;
+	height: 5vh;
 }
 
-.vis
-{
-	display: block;
-}
-
-.invis
+.button
 {
 	display: none;
+	padding-top: 2.5vh;
+	cursor: pointer;
 }
 
+
+.v-menu-container
+{
+	display: none;
+	position: absolute;
+	top: 10vh;
+}
+
+.v-menu
+{
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+}
+
+.v-menu-item
+{
+	height: 10vh;
+	line-height: 10vh;
+	text-align: center;
+	background-color: #b1976bff;
+	color: #343436;
+}
+
+.v-menu-item
+{
+	width: 100%;
+}
 
 @media only screen and ( max-width: 900px )
 {
-	.bars
+	.button
 	{
 		display: block;
 	}
 
 	.menu
 	{
-		flex-direction: column;
 		display: none;
+	}
+
+	.v-menu-container
+	{
+		display: block;
 	}
 }
 
 
 /* ----------------------footer------------------------- */
 
-.footer{
+.footer
+{
 	display: flex;
 	height: 8vh;
 	background-color: red;
