@@ -1,6 +1,6 @@
 .section-1 {
   background: linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.7)),
-    url("../assets/images/books.jpg");
+    url("../assets/images/books_scaled_30.webp");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +34,7 @@
   flex-wrap: wrap;
   justify-content: center;
   justify-items: center;
-  width: 60%;
+  width: 60vw;
 }
 
 .card {
