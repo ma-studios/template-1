@@ -1,0 +1,16 @@
+@media screen and (max-width: 480px){
+  .section-1 {
+    font-size: 32px;
+  }
+  .section-1 a {
+    padding: 20px;
+  }
+
+  .card-holder {
+    width: 100%;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+}
