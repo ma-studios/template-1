@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "OldStandard";
-  src: url("../assets/fonts/Faustina/Faustina-Italic-VariableFont_wght.ttf");
+  font-family: "PlayFair";
+  src: url("../assets/fonts/PlayfairDisplay-Regular.ttf");
 } 
 
 *
 {
 	margin: 0;
 	padding: 0;
-	font-family: "OldStandard";
+	font-family: "PlayFair";
 	box-sizing: border-box;
 }
 
