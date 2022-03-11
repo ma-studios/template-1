@@ -1,5 +1,10 @@
 /* ~~~~~~~~~~~~~~~~~~~~SECTION 1~~~~~~~~~~~~~~~~~~~~ */
 
+.section-1
+{
+	height: 100vh;
+}
+
 .wrapper-1
 {
 	flex-direction: column;
@@ -7,10 +12,10 @@
 
 .content
 {
+	height: 80%;
 	padding: 35vh 0;
 	font-size: 5vh;
 	color: #b1976bff;
-	height: 80vh;
 	text-align: center;
 }
 
@@ -20,11 +25,6 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-}
-
-.section-1
-{
-	color: white;
 }
 
 .contact-segment
@@ -218,9 +218,10 @@
 	height: 400px;
 
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 
 	border: 0.5px solid rgba(80,80,80,.5);
+	padding: 20px;
 }
 
 .card:hover
@@ -238,6 +239,7 @@
 
 .title-3
 {
+	flex-basis: 70%;
 	font-size: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -245,15 +247,22 @@
 
 .desc
 {
+	flex-basis: 100%;
 	font-size: 1em;
 	line-height: 1.5em;
 	/* padding-right: 2em; */
 }
 
+.icon
+{
+	flex-basis: 30%;
+}
+
 .icon img
 {
-	width: 60px;
-	height: 60px;
+	display: block;
+	width: 80%;
+	margin: auto;
 }
 
 @media only screen and ( max-width: 1100px )

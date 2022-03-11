@@ -16,6 +16,7 @@
   color: white;
   background: #ceb08a;
 }
+
 body
 {
 	display: flex;
@@ -26,26 +27,23 @@ a
 {
 	text-decoration: none;
 	color: inherit;
-}	
-
+}
 
 .section
 {
 	height: 100vh;
-	/* border: 2px solid gold; */
 }
 
 .wrapper
 {
 	width: 80%;
 	margin: auto;
-
 	display: flex;
 }
 
 .footer
 {
-	height: 100px;
+	height: 10vh;
 }
 
 .background
@@ -61,16 +59,15 @@ a
 .wrapper-1
 {
 	flex-direction: column;
+	height: 100vh;
 }
 
 .header
 {
+	height: 10vh;
 	display: flex;
 	justify-content: space-between;
-	height: 10vh;
-	/* position: relative; */
 }
-
 
 .logo
 {
@@ -78,7 +75,6 @@ a
 	height: 8vh;
 }
 
-/* -item- -item- -item- */
 .menu
 {
 	display: flex;
