@@ -7,53 +7,67 @@
   background-position: center center;
 }
 
-.section-1 {
-  height: 28.7vh;
-  color: #cdb781;
-  font-size: 22px;
+.wrapper-1
+{
+	height: 200px;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 80px;
-  height: 81.3vh;
+.section-1 
+{
+  height: 200px;
 }
 
-.info {
+.wrapper-1
+{
+	display: flex;
+}
+
+.title
+{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.info 
+{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 8%;
 }
+
+/* ~~~~~~~~~~~~~~CONTCTS~~~~~~~~~~~~~~~ */
 
 .contact {
   width: 493px;
 }
 
-.contact > span {
+.contact-title
+{
   font-size: 32px;
 }
 
 .contacts {
   display: flex;
   margin: 20px 0px;
+  align-items: flex-start;
 }
 
-.contacts img {
+.contacts-icon
+{
   width: 32px;
   margin: 0 10px;
 }
 
-.description a img {
+/* face twit insta */
+.social-icon 
+{
   width: 30px;
   height: 30px;
-  border: 1px solid #808080;
-}
-
-.description span {
-  font-size: 20px;
+  margin: 10px;
 }
 
 .description p {
@@ -61,39 +75,49 @@
   display: block;
 }
 
-.description a img {
-  margin: 10px;
-}
-
-.form {
+/* ~~~~~~~~~~~~~~~~~FORM~~~~~~~~~~~~~~ */
+form {
   display: flex;
   flex-wrap: wrap;
   width: 493px;
+  justify-content: space-between;
 }
 
-.form form span {
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  font-size: 32px;
-}
-
-.form form input {
+form input {
   width: 49%;
   margin-bottom: 10px;
   padding: 10px;
   font-size: 16px;
 }
 
-.form form textarea {
-  width: 100%;
-  font-size: 16px;
+form input:focus, form textarea:focus
+{
+	outline: none;
 }
 
-.form form button {
+form textarea {
+  width: 100%;
+  font-size: 16px;
+  resize: none;
+}
+
+form button {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
   background-color: #b1976b;
   color: white;
   font-size: 16px;
+
+  border: none;
+  outline: none;
+}
+
+/* ~~~~~~~~~~~~~~~~MAPA~~~~~~~~~~ */
+.map
+{
+	width: 95%;
+	height: 600px;
+	margin: auto;
+	filter: grayscale( 100% );
 }
