@@ -1,12 +1,15 @@
-@media screen and (min-width: 480px) and (max-width: 900px)  {
-  .section-1 {
-    font-size: 28px;
+@media screen and (min-width: 600px) and (max-width: 1100px)  {
+  .section-1
+  {
+    height: 300px;
   }
 
-  .section-1 a {
-    padding: 20px;
+  .content
+  {
+    height: 200px;
   }
 
+  
   .card-holder {
     width: 100%;
   }

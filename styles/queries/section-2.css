@@ -1,0 +1,55 @@
+@media only screen and (max-width: 600px)
+{
+  .section-2
+  {
+    height: 700px;
+  }
+
+  .image 
+  {
+    display: none;
+  }
+
+  .bio
+  {
+    flex-basis: 100%;
+  }
+
+  .info-small
+  {
+    flex-basis: 100%;
+  }
+
+  .info-paragraph
+  {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and ( max-width: 1100px )
+{
+	.section-2
+	{
+		height: 660px;
+	}
+
+	.bio
+	{
+    flex-basis: 60%
+	}
+
+	.image
+	{
+		flex-basis: 40%;
+	}
+
+	.info
+	{
+		flex-basis: 100%;
+	}
+
+	.wrapper-2
+	{
+		flex-wrap: wrap;
+	}
+}

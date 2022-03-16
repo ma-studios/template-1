@@ -1,16 +1,22 @@
-@media screen and (max-width: 480px){
-  .section-1 {
-    font-size: 32px;
+@media screen and (max-width: 600px){
+
+  .section-1
+  {
+    height: 300px;
   }
-  .section-1 a {
-    padding: 20px;
+
+  .content
+  {
+    height: 200px;
   }
 
   .card-holder {
-    width: 100%;
+    flex-wrap: wrap;
+    width: 100vw;
   }
 
   .card {
     flex-basis: 100%;
+
   }
 }
