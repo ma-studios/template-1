@@ -1,3 +1,10 @@
+//TODO
+//@media > 900px -> stil h-menu
+//@media < 900px -> stil v-menu
+//js ako je ekran manji od 900 init
+//ako nije nista
+//eventListener za promenu velicine ekrana
+
 let bars;
 let x;
 let menu;
@@ -21,23 +28,44 @@ let toggleMenu = () =>
 	toggleDisplay( menu );
 }
 
+let onWindowResize = () =>
+{
+	if( window.innerWidth < 1100 )
+	{
+		menu.style.display = "none";
+		bars.style.display = "block";
+		x.style.display = "none";
+	}
+	else
+	{
+		menu.style.display = "flex";
+	}
+}
+
 let init = () =>
 {
 	bars = document.querySelector( ".bars" );
 	x = document.querySelector( ".x" );
-	menu = document.querySelector( ".v-menu" );
+	menu = document.querySelector( ".menu" );
 
-	//css klsa daje display none
-	//css klase dodelim display block
-	//
-	//element.style.display -> ""
+	console.log( menu, bars, x );
 
-	menu.style.display = "none";
-	bars.style.display = "block";
-	x.style.display = "none";
+	if( window.innerWidth < 1100 )
+	{
+		console.log( "<1100" );
+		menu.style.display = "none";
+		bars.style.display = "block";
+		x.style.display = "none";
+	}
+	else
+	{
+		menu.style.display = "flex";
+	}
 
 	bars.addEventListener( "click", toggleMenu );
 	x.addEventListener( "click", toggleMenu );
+	window.addEventListener( "resize", onWindowResize );
 }
 
 document.addEventListener( "DOMContentLoaded", init );
+

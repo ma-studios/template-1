@@ -75,7 +75,7 @@
 {
   margin-top: 50px;
 	display: flex;
-  height: auto;
+  height: 700px;
 }
 
 .wrapper-2
@@ -83,6 +83,9 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+
+/* slika se cudno ponasa */
+/* sa propertijima widht i height */
 
 .image
 {
@@ -135,6 +138,61 @@
 	margin: 10px;
 }
 
+@media only screen and (max-width: 600px)
+{
+  .section-2
+  {
+    height: 700px;
+  }
+
+  .image 
+  {
+    display: none;
+  }
+
+  .bio
+  {
+    flex-basis: 100%;
+  }
+
+  .info-small
+  {
+    flex-basis: 100%;
+  }
+
+  .info-paragraph
+  {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and ( max-width: 1100px )
+{
+	.section-2
+	{
+		height: 660px;
+	}
+
+	.bio
+	{
+    flex-basis: 60%
+	}
+
+	.image
+	{
+		flex-basis: 40%;
+	}
+
+	.info
+	{
+		flex-basis: 100%;
+	}
+
+	.wrapper-2
+	{
+		flex-wrap: wrap;
+	}
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~SECTION 3~~~~~~~~~~~~~~~~~~~~ */
 .section-3, .background-3
@@ -235,6 +293,31 @@
 	width: 50px;
 }
 
+@media only screen and ( max-width: 1100px ) and ( min-width: 600px )
+{
+	.section-3, .background-3
+	{
+		height: 1400px;
+	}
+
+	.card
+	{
+		flex-basis: 50%;
+	}
+}
+
+@media only screen and ( max-width: 600px )
+{
+	.section-3, .background-3
+	{
+		height: 2600px;
+	}
+
+	.card
+	{
+		flex-basis: 100%;
+	}
+}
 /* ~~~~~~~~~~~~~~section 4~~~~~~~~~~~~~~~~~~~~~ */
 
 .wrapper-4

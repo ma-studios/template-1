@@ -75,20 +75,56 @@ a
 	height: 8vh;
 }
 
-.menu
+@media only screen and ( min-width: 1100px )
 {
-	display: flex;
-	width: 30%;
-	justify-content: space-evenly;
-	color: #b1976bff;
+	.menu
+	{
+		display: flex;
+		width: 30%;
+		justify-content: space-evenly;
+		color: #b1976bff;
+	}
+
+	.menu-item
+	{
+		height: 10vh;
+		line-height: 10vh;
+	}
+
+	.button
+	{
+		display: none;
+	}
 }
 
-.menu-item
+@media only screen and ( max-width: 1100px )
 {
-	height: 10vh;
-	line-height: 10vh;
-}
+	.menu
+	{
+		display: flex;
+		flex-direction: column;
+		width: 80vw;
+		height: 30vh;
 
+		position: absolute;
+		transform: translate( 0, 10vh );
+	}
+
+	.menu-item
+	{
+		height: 10vh;
+		line-height: 10vh;
+		text-align: center;
+		background-color: #b1976bff;
+		color: #343436;
+		width: 100%;
+	}
+
+	.button
+	{
+		display: block;
+	}
+}
 
 .bars, .x
 {
@@ -98,58 +134,9 @@ a
 
 .button
 {
-	display: none;
 	padding-top: 2.5vh;
 	cursor: pointer;
 }
-
-
-.v-menu-container
-{
-	display: none;
-	position: absolute;
-	top: 10vh;
-}
-
-.v-menu
-{
-	display: flex;
-	flex-direction: column;
-	width: 80vw;
-}
-
-.v-menu-item
-{
-	height: 10vh;
-	line-height: 10vh;
-	text-align: center;
-	background-color: #b1976bff;
-	color: #343436;
-}
-
-.v-menu-item
-{
-	width: 100%;
-}
-
-@media only screen and ( max-width: 900px )
-{
-	.button
-	{
-		display: block;
-	}
-
-	.menu
-	{
-		display: none;
-	}
-
-	.v-menu-container
-	{
-		display: block;
-	}
-}
-
 
 /* ----------------------footer------------------------- */
 
